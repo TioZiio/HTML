@@ -1,0 +1,1213 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+
+}
+html{
+    font-size: 65.5%;
+
+}
+
+:root{
+    --cor-principal: #1d7b36;
+    --cor-branca: #ffffff;
+    --cor-escura: #132919;
+    --cor-secundaria: #55bd3c;
+    --cor-terciaria:#a3e094;
+    --s-valor-bg: #141622;
+
+}
+
+/* Inicio do topo site talentos desempregados*/
+ 
+.super-topo .super-topo-box{
+    width: 100%;
+    background: var(--cor-principal);
+
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo{
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor-branca);
+    padding: 1rem 0;
+    background: var(--cor-escura);
+    clip-path: polygon(8% 0%, 92% 0%, 96% 100%, 5% 100%);
+
+   
+
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo .col-1{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-branca);
+    margin-left: 13rem;
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo .col-1 span{
+    font-size: 1.1rem;
+
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo .col-1 span i{
+    color: var(--cor-terciaria);
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+    
+ }
+.super-topo-box .super-topo-box-corpo .col-2{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    color: var(--cor-branca);
+    margin-right: 13rem;   
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo .col-2 a,
+ .super-topo .super-topo-box .super-topo-box-corpo .col-2 a span,
+ .super-topo .super-topo-box .super-topo-box-corpo .col-2 a .social i{
+    color: var(--cor-branca);
+    font-size: 1.1rem;
+    transition: 0.4s;
+
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo .col-2 a .social{
+    display: flex;
+    gap: 0.9rem;
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo .col-2  i{
+    padding-right: 0.5rem;
+ }
+ .super-topo .super-topo-box .super-topo-box-corpo .col-2  i:hover,
+ .super-topo .super-topo-box .super-topo-box-corpo .col-2  a:hover{
+    color: var(--cor-principal);
+ }
+ /*Inicio celular*/
+ @media(max-width:1150px){
+    .super-topo .super-topo-box .super-topo-box-corpo .col-1{
+        margin-left: 8rem;
+    }
+    .super-topo .super-topo-box .super-topo-box-corpo .col-2{
+        margin-left: 8rem;
+    }
+    
+ }
+ @media(max-width:901px){
+    .super-topo {
+        display: none;
+    }
+
+
+ }
+ /*fim celular*/
+/* Fim ==== do topo site talentos desempregados*/
+/* Inicio ==== cabeçalho site e nav talentos desempregados*/
+.topo-menu-site{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   position: sticky;
+   left: 0;
+   top: 0;
+   padding: 0.5rem 9.5%;
+   background: var(--cor-branca);
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5),
+   0 0 10px rgba(190, 190, 190, 0.5);
+   z-index: 111;
+   transition: 0.4s ease;
+
+}
+.topo-menu-site.sticky{
+   padding: 0.9.5%;
+
+}
+.topo-menu-site .logo img{
+   width: 70px;
+}
+.topo-menu-site nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+}
+nav .menuSite ul li {
+   padding: 2.5rem 0.5rem;
+}
+nav .menuSite .menulinks{
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   gap: 1.5rem;
+
+}
+nav .menuSite .menulinks li a{
+   position: relative;
+   color: var(--cor-escura);
+   font-size: 1.4rem;
+   font-weight: 600;
+
+}
+nav .meupesquisa{
+   display: flex;
+   gap: 1.5rem;
+   align-items: center;
+}
+nav .meupesquisa i{
+   font-size: 1.9rem;
+   color: var(--cor-secundaria);
+   cursor: pointer;
+
+}
+nav .meupesquisa .addBtn{
+   position: relative;
+   background: var(--cor-principal);
+   font-size: 1.6rem;
+   padding: 1.2rem 1.5rem;
+   color: var(--cor-branca);
+   border-radius: 14px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: 0.7s;
+}
+nav .meupesquisa .addBtn:hover{
+   background: var(--cor-terciaria);
+   color: var(--cor-branca);
+
+
+}
+nav .meupesquisa .addBtn i
+nav .meupesquisa .addBtn i:hover{
+   color: var(--cor-branca);
+   padding-right: 0rem;
+
+}
+#menuBtn{
+   font-size: 3.5rem;
+}
+nav .meupesquisa i:hover{
+   color: var(--cor-principal);
+}
+nav .menuSite ul li a:hover,
+nav .menuSite ul li a.active {
+   
+   color: var(--cor-principal);
+}
+/* Inicio sub menu==== cabeçalho site e nav talentos desempregados*/
+
+nav .menuSite ul li .menuSub{
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   position: absolute;
+   top: 7rem;
+   text-align: justify;
+   width: 180px;
+   background-color: var(--cor-branca);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+   padding: 1rem 0 0;
+   display: none;
+
+}
+nav .menuSite ul li{
+   transition: 0.4 ease;
+}
+
+nav .menuSite ul li:hover .menuSub{
+   display: flex;
+}
+
+nav .menuSite ul li .menuSub li{
+   border-bottom: 1px solid rgba(190, 190, 190, 0.5);
+   padding: 0.5rem 0 1rem 1rem;
+   z-index: 100;
+   overflow: hidden;
+
+}
+nav .menuSite ul li .menuSub li a{
+   font-size: 1.2rem;
+   transition: 0.4s ease;
+
+
+}
+nav .menuSite ul li .menuSub li a:hover{
+   font-size: 1.3rem;
+   padding-left: 0.5rem;
+
+}
+
+
+
+/* Fim sub menu==== cabeçalho site e nav talentos desempregados*/
+
+/* inicio sub do sub menu 1 ==== cabeçalho site e nav talentos desempregados*/
+
+.menuSub li .menuSub-1{
+   position: absolute;
+   left: 182px;
+   width: 180px;
+   display: flex;
+   flex-direction: column;
+   margin-top: -3rem;
+   text-align: justify;
+   padding: 1rem 0 0;
+   background-color: var(--cor-branca);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+   z-index: 111;
+   overflow: hidden;
+   display: none;
+}
+.menuSub li:hover .menuSub-1{
+   display: flex;
+}
+
+
+.menuSub li .setaBaixo{
+   position: absolute;
+   left: 150px;
+   top: 5px;
+   color: var(--cor-escura);
+
+}
+.menuSub li:hover .setaBaixo{
+   color: var(--cor-principal);
+}
+
+/* inicio sub do sub menu 2 ==== cabeçalho site e nav talentos desempregados*/
+.menuSub li .menuSub-2{
+   position: absolute;
+   left: 182px;
+   width: 180px;
+   display: flex;
+   flex-direction: column;
+   margin-top: -3rem;
+   text-align: justify;
+   padding: 1rem 0 0;
+   background-color: var(--cor-branca);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+   z-index: 111;
+   overflow: hidden;
+   display: none;
+}
+.menuSub li:hover .menuSub-2{
+   display: flex;
+}
+
+
+.menuSub li .setaBaixo{
+   position: absolute;
+   left: 150px;
+   top: 5px;
+   color: var(--cor-escura);
+
+}
+.menuSub li:hover .setaBaixo{
+   color: var(--cor-principal);
+}
+
+
+/* inicio sub 3 desing visual ==== cabeçalho site e nav talentos desempregados*/
+.menuSub li .menuSub-3{
+   position: absolute;
+   left: 182px;
+   width: 180px;
+   display: flex;
+   flex-direction: column;
+   margin-top: -3rem;
+   text-align: justify;
+   padding: 1rem 0 0;
+   background-color: var(--cor-branca);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+   z-index: 111;
+   overflow: hidden;
+   display: none;
+}
+.menuSub li:hover .menuSub-3{
+   display: flex;
+}
+
+
+.menuSub li .setaBaixo{
+   position: absolute;
+   left: 150px;
+   top: 5px;
+   color: var(--cor-escura);
+
+}
+.menuSub li:hover .setaBaixo{
+   color: var(--cor-principal);
+}
+
+/* Fim 3 desing visual ==== cabeçalho site e nav talentos desempregados*/
+
+/* inicio sub 4 desing visual ==== cabeçalho site e nav talentos desempregados*/
+.menuSub li .menuSub-4{
+   position: absolute;
+   left: 182px;
+   width: 180px;
+   display: flex;
+   flex-direction: column;
+   margin-top: -3rem;
+   text-align: justify;
+   padding: 1rem 0 0;
+   background-color: var(--cor-branca);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+   z-index: 111;
+   overflow: hidden;
+   display: none;
+}
+.menuSub li:hover .menuSub-4{
+   display: flex;
+}
+
+
+.menuSub li .setaBaixo{
+   position: absolute;
+   left: 150px;
+   top: 5px;
+   color: var(--cor-escura);
+
+}
+.menuSub li:hover .setaBaixo{
+   color: var(--cor-principal);
+}
+
+
+/* Fim 4 desing visual ==== cabeçalho site e nav talentos desempregados*/
+/* INICIO 5 desing visual ==== cabeçalho site e nav talentos desempregados*/
+.menuSub li .menuSub-5{
+   position: absolute;
+   left: 182px;
+   width: 180px;
+   display: flex;
+   flex-direction: column;
+   margin-top: -3rem;
+   text-align: justify;
+   padding: 1rem 0 0;
+   background-color: var(--cor-branca);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+   z-index: 111;
+   overflow: hidden;
+   display: none;
+}
+.menuSub li:hover .menuSub-5{
+   display: flex;
+}
+
+
+.menuSub li .setaBaixo5{
+   position: absolute;
+   left: 150px;
+   top: 5px;
+   color: var(--cor-escura);
+
+}
+.menuSub li:hover .setaBaixo5{
+   color: var(--cor-principal);
+}
+/* Fim 5 desing visual ==== cabeçalho site e nav talentos desempregados*/
+/* inicio 6 desing visual ==== cabeçalho site e nav talentos desempregados*/
+.menuSub li .menuSub-6{
+   position: absolute;
+   left: 182px;
+   width: 180px;
+   display: flex;
+   flex-direction: column;
+   margin-top: -3rem;
+   text-align: justify;
+   padding: 1rem 0 0;
+   background-color: var(--cor-branca);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+   z-index: 111;
+   overflow: hidden;
+   display: none;
+}
+.menuSub li:hover .menuSub-6{
+   display: flex;
+}
+
+
+.menuSub li .setaBaixo6{
+   position: absolute;
+   left: 150px;
+   top: 5px;
+   color: var(--cor-escura);
+
+}
+.menuSub li:hover .setaBaixo6{
+   color: var(--cor-principal);
+}
+
+/* Fim 6 desing visual ==== cabeçalho site e nav talentos desempregados*/
+/* In9icio sub celular ==== cabeçalho site e nav talentos desempregados*/
+@media(max-width:1370px){
+   nav .meuSite ul li{
+      gap: 1rem;
+   }
+   nav .menulinks ul li{
+      gap: 0.5rem;
+   }
+}
+@media(max-width:1190px){
+   nav .meuSite ul li{
+      padding: 2.1rem 0;
+   }
+nav .meupesquisa .addBtn{
+   display: none;
+}
+}
+@media(max-width:911px){
+   nav .meuSite .menuLinks{
+      position:absolute;
+      top: 5.3rem;
+      left: 0;
+      width: 100%;
+      display: block;
+      background: var(--cor-branca);
+      box-shadow: 0 0 5 rgba(190, 190, 190, 0.5),
+      0 0 5 rgba(190, 190, 190, 0.5);
+      padding-left: 30px;
+      transition:  0.5 ease-in-out;
+
+
+}
+  .topo-menu-site.sticky{
+   padding: 0.6rem 9.5rem;
+
+  }
+  nav .meuSite ul li{
+   padding: 1rem 0;
+   
+  }
+  nav .meuSite ul li .menuSub{
+   position: sticky;
+   display: none;
+  }
+  .menuSub li .meusub-dois{
+   position: sticky;
+   margin-top: 0rem;
+
+  }
+nav .meupesquisa i.cart{
+   display: none;
+
+}
+
+@media(max-width:420px) {
+
+   .topo-menu-site .logo .img{
+      width: 120px;
+      
+   }
+}
+nav .meuSite .menuLinks{
+   top: 4.6rem;
+
+}
+}
+
+
+
+/* Fim sub celular==== cabeçalho site e nav talentos desempregados*/
+/* inicio slide principal ==== cabeçalho site e nav talentos desempregados*/
+
+.slide-destaque .slide{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+   padding: 0 15rem;
+}
+.slide-destaque .slide .col-1{
+   flex: 1 1 20rem;
+
+}
+.slide-destaque .slide .col-1 h4{
+   font-size: 2.5rem;
+   color: var(--cor-principal);
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   padding: 3rem;
+
+}
+.slide-destaque .slide .col-1 h4 span{
+   color: var(--cor-branca);
+}
+.slide-destaque .slide .col-1  h1{
+   font-size: 3.2rem;
+   color: var(--cor-branca);
+   text-transform: capitalize;
+   letter-spacing: 3px;
+}
+.slide-destaque .slide .col-1 span{
+   color: var(--cor-principal);
+}
+.slide-destaque .slide .col-1 p{
+   font-size: 1.4rem;
+   color: var(--cor-branca);
+   letter-spacing: 2px;
+   padding-top: 2rem;
+
+}
+.slide-destaque .slide .col-1 .button{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   padding-top: 4rem;
+
+}
+.slide-destaque .slide .col-1 .button a{
+   font-size: 1.7rem;
+   font-weight: 600;
+   letter-spacing: 2px;
+   border-radius: 10px;
+   position: relative;
+   padding: 1.8rem 2.8rem 1.8rem 2rem;
+   transition: 0.2s ease;
+   cursor: pointer;
+
+
+}
+.slide-destaque .slide .col-1 .button a i{
+   font-size: 2.5rem;
+   position: absolute;
+   top: 23%;
+   right: -1rem;
+   transform: translate();
+}
+.slide-destaque .slide .col-1 .button a.website{
+   background-color: var(--cor-principal);
+   color: var(--cor-branca);
+
+}
+.slide-destaque .slide .col-1 .button a.trabweb{
+   background-color: var(--cor-branca);
+   color: var(--cor-principal);
+}
+
+.slide-destaque .slide .col-1 .button a.website:hover,
+.slide-destaque .slide .col-1 .button a.trabweb:hover{
+   background-color: var(--cor-secundaria);
+   color: var(--cor-branca);
+}
+.slide-destaque .slide .col-2{
+   flex: 1 1 40rem;
+   padding-top: 3rem;
+
+}
+
+.slide-destaque .slide .col-2 img{
+   width: 90%;
+   height: auto;
+}
+.slide-destaque .swiper [class^="swiper-button"]{
+   color: var(--cor-branca);
+   background-color:  rgba(49, 211, 13, 0.5);
+   padding: 2.5rem;
+
+}
+.slide-destaque .swiper [class^="swiper-button"]:hover{
+     background-color: var(--cor-principal);
+
+ 
+}
+.slide-destaque .swiper [class^="swiper-button"]:hover{
+   
+   font-size: 2rem;
+
+}
+
+/* inicio slide celular principal ==== cabeçalho site e nav talentos desempregados*/
+@media(max-width:1150px){
+      .slide-destaque .slide{
+         display: block;
+         height: auto;
+         padding: 5rem 10rem;
+      }
+      .slide-destaque .slide .col-2 img{
+         width: 90%;
+         height: 35rem;
+      }
+}
+@media(max-width:1150px){
+   .slide-destaque .slide {
+      padding: 5rem 7rem;
+   }
+
+   .slide-destaque .slide .col-1 h4{
+      font-size: 2rem;
+
+   }
+   .slide-destaque .slide .col-1 h1{
+      font-size: 3.2rem;
+
+   }
+   .slide-destaque .slide .col-1 .button a{
+      padding: 1.5rem 2.8rem 1.5rem 2rem;
+      font-size: 1.3rem;
+
+   }
+   .slide-destaque .slide .col-1 .button a i{
+      font-size: 2rem;
+   }
+   
+   .slide-destaque .slide .col-2 img{
+      width: 90%;
+      height: auto;
+   }
+}
+
+@media(max-width:450px){
+   .slide-destaque .slide .col-1 h4{
+      font-size: 1.3rem;
+
+   }
+   .slide-destaque .slide .col-1 h1{
+      font-size: 2.2rem;
+
+   }
+   
+}
+
+
+/* Fim slide celular principal ==== cabeçalho site e nav talentos desempregados mateusmdmmt@gmail.com*/
+/* Fim slide principal ==== cabeçalho site e nav talentos desempregados mateusmdmmt@gmail.com*/
+
+/*Inicio sobre nos ==== cabeçalho site e nav talentos desempregados mateusmdmmt@gmail.com*/
+section{
+   padding: 2.5rem 16rem;
+   background: #f2f2f2 ;
+}
+.sobreNOS{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4rem;
+   align-items: center;
+   justify-content: center;
+   padding-top:9rem ;
+  
+}
+.sobreNOS .col-3{
+   flex: 1 1 20rem;
+   position: relative;
+
+}
+.sobreNOS .col-3 img.s-img-um{
+   width: 100%;
+   height: 45rem;
+}
+.sobreNOS .col-3 .s-valor{
+   position: absolute;
+   top: 0;
+   left: 0;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   gap: 10px;
+   padding: 1rem;
+   background-color: var(--s-valor-bg);
+   border-radius: 20px;
+}
+
+.sobreNOS .col-3 .s-valor span{
+   color: var(--cor-branca);
+   font-size: 1.6rem;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+.sobreNOS .col-3 .s-valor img.s-img-dois{
+   width: 80px;
+}
+
+.sobreNOS .col-4{
+   flex:1 1 20rem ;
+} 
+.sobreNOS .col-4 h4{
+   font-size: 2rem;
+   font-weight: 500;
+   color: var(--cor-principal);
+   letter-spacing: 1px;
+   padding-bottom: 1rem;
+
+} 
+.sobreNOS .col-4 h4 i{
+   padding-right: 0.5rem;
+
+}
+.sobreNOS .col-4 h3{
+   font-size: 4rem;
+   text-transform: capitalize;
+   color: var(--cor-escura);
+   padding-bottom: 2rem;
+}
+.sobreNOS .col-4 h3 span{
+   color: var(--cor-principal);
+}
+.sobreNOS .col-4 h4 p.text{
+   font-size: 4rem;
+   color: var(--cor-escura);
+   padding-bottom: 1rem;
+}
+.sobreNOS .col-4 p1{
+   font-size: 1.5rem;
+   padding-bottom:1rem ;
+
+}
+.sobreNOS .col-4 .p1 i{
+   font-size: 1.6rem;
+   color: var(--cor-principal);
+   padding-right: 0.5rem;
+}
+.sobreNOS .col-4 a{
+   font-size: 1.6rem;
+   color: var(--cor-branca);
+   background: var(--cor-principal);
+   position: relative;
+   margin-top: 2.5rem;
+   padding: 1.5rem 3.5rem;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.5s ease;
+
+}
+.sobreNOS .col-4 a:hover{
+   background-color: var(--cor-escura);
+   color: var(--cor-branca);
+
+}
+.sobreNOS .col-4 a i{
+   font-size: 2rem;
+   position: absolute;
+   top: 20px;
+
+}
+
+
+
+/* Inicio responsivel sobre nos==== cabeçalho site e nav talentos desempregados mateusmdmmt@gmail.com*/
+
+/* Fim responsivel  sobre nos==== cabeçalho site e nav talentos desempregados mateusmdmmt@gmail.com*/
+
+/* Fim  sobre nos==== cabeçalho site e nav talentos desempregados mateusmdmmt@gmail.com*/
+
+
+/* inicio contador nos==== cabeçalho site e nav talentos desempregados mateusmdmmt@gmail.com*/
+.contador{
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 2rem;
+   width: 100%;
+   min-height: 50vh;
+   background: url("") ;
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+
+}
+.contador .contador-box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.contador .contador-box img{
+   width: 70px;
+   height: 70px;
+   background-color: var(--cor-branca);
+   border-radius: 50%;
+   padding: 0.5rem;
+}
+.contador .contador-box span.numero{
+   color: var(--cor-escura);
+   font-size: 3.2rem;
+   font-weight: 600;
+   padding: 1rem 0;
+}
+.contador .contador-box span.text{
+   color: var(--cor-escura);
+   font-size: 1.5rem;
+   font-weight: 500;
+  
+}
+.contador .contador-box span.text i{
+   padding-right: 0.5rem;
+}
+
+
+/* Inicio celular/computador contador==== cabeçalho site e nav talentos desempregados*/
+
+/* Fim celular/computador contador==== cabeçalho site e nav talentos desempregados*/
+/* Fim  contador==== cabeçalho site e nav talentos desempregados*/
+
+
+/* Inicio o mais buscados==== cabeçalho site e nav talentos desempregados*/
+.osmaisbuscados{
+   text-align: center;
+   padding: 7rem;
+
+}
+section h4{
+   font-size: 2rem;
+   font-weight: 600;
+   color: var(--cor-principal);
+   letter-spacing: 2px;
+   text-transform: uppercase;
+
+
+}
+section h4 i{
+   padding: 0.5rem;
+}
+section h1{
+   color: var(--cor-escura);
+   font-size: 4.7rem;
+   letter-spacing: 1px;
+   padding-bottom: 4rem;
+   text-transform: capitalize;
+
+}
+section h1 span{
+   color: var(--cor-escura);
+
+}
+.osmaisbuscados .cr-linha{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr ;
+   gap: 1.5rem;
+}
+.cr-linha .cr-col{
+   padding: 1rem;
+   box-shadow: var(--cor-escura);
+   background-color: var(--cor-branca);
+   border-radius: 5px;
+   text-align: justify;
+}
+.cr-linha .cr-col img-cr{
+   width: 100%;
+   height: 15rem;
+   border-radius: 5px;
+   overflow: hidden;
+   transition: 0.5s ease;
+
+}
+.cr-linha .cr-col img{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   cursor: pointer;
+   transition:  0.5s ease ;
+}
+
+/*.cr-linha .cr-col .img-cr img{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   cursor: pointer;
+   transition:  0.5s ease ;
+}*/
+.cr-linha .cr-col .img-cr:hover img{
+   transform: scale(1.3);
+}
+.cr-linha .cr-col h5{
+   font-size: 1.8rem;
+   color: var(--cor-principal);
+   padding: 1rem 0;
+
+
+}
+.cr-linha .cr-col .classificacoes{
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   padding: 0.5rem;
+
+}
+.cr-col .cl-estrelas{
+   font-size: 1.4rem;
+   color: var(--cor-principal);
+}
+.cr-col .cl-estrelas .cl-ct-estrelas span{
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: var(--cor-escura);
+
+
+}
+.cr-col .cr-info{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+.cr-col .cr-info span{
+   font-size: 1.1rem;
+   color: var(--cor-escura);
+}
+.cr-col .cr-info i{
+   padding-right: 0.3rem;
+   color: var(--cor-principal);
+
+}
+.cr-col .cr-valor{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.cr-col .cr-valor p{
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: var(--cor-principal);
+
+}
+.cr-col .cr-valor a{
+   background-color: var(--cor-principal);
+   padding: 0.8rem 2.8rem;
+   border-radius: 0,5rem;
+   color: var(--cor-branca);
+   cursor: pointer;
+
+
+}
+.cr-col .cr-valor a:hover{
+   background-color: var(--cor-escura);
+}
+.osmaisbuscados a.cr-link{
+   font-size: 1.4rem;
+   font-weight: 600;
+   background-color: var(--cor-principal);
+
+   color: var(--cor-branca);
+   margin-top: 4rem;
+   padding: 1.4rem 3.5rem;
+   border-radius: 12px;
+   transition: 0.5s ease;
+
+}
+.osmaisbuscados a.cr-link:hover{
+   background-color: var(--cor-escura);
+}
+.osmaisbuscados a.cr-link i{
+   padding: 0.5rem;
+}
+/* Fim o mais buscados==== cabeçalho site e nav talentos desempregados*/
+/* Inicio depoimentos ==== cabeçalho site e nav talentos desempregados*/
+.depoimentos{
+   text-align: center;
+   padding-top:7rem ;
+   padding-bottom: 5rem;
+
+}
+.depoimentos .slide{
+   background-color: var(--cor-branca);
+   box-shadow: 0 0 2px var(--cor-escura);
+   padding: 1rem;
+
+
+}
+.depoimentos .slide img{
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
+   object-position: top;
+   background-color: var(--cor-terciaria);
+   border-radius: 50%;
+   padding: 0.5rem;
+}
+.depoimentos .slide h5{
+   font-size: 1.8rem;
+   color: var(--cor-escura);
+   padding: 0.5rem;
+}
+.depoimentos .slide span{
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: var(--cor-secundaria);
+
+}
+
+.depoimentos .slide p{
+   font-size: 1.4rem;
+   color: var(--s-valor-bg);
+
+}
+.depoimentos .slide i{
+   color: var(--cor-principal);
+   font-size: 1.2rem;
+}
+/* Fim depoimentos ==== cabeçalho site e nav talentos desempregados*/
+
+/* inicio rodape ==== cabeçalho site e nav talentos desempregados*/
+.rodape{
+   background-color:var(--cor-escura) ;
+
+}
+.rodape .rodape-linha{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 2rem;
+   padding: 2rem;
+}
+.rodape-linha  .rodape-col img{
+   width: 200px;
+   height: auto;
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+   border-radius: 5px;
+
+}
+.rodape-linha .rodape-col p{
+   font-size: 1.3rem;
+   color: var(--cor-branca);
+   padding-bottom: 2.5rem;
+}
+.rodape-linha .rodape-col span{
+   display: block;
+   font-size: 1.2;
+   color: var(--cor-branca);
+   padding-bottom:1rem ;
+
+
+}
+.rodape-linha .rodape-col span i{
+   font-size: 15px;
+   background: var(--cor-principal);
+   padding: 0.5rem;
+   margin-right: 5px;
+   border-radius: 10px;
+}
+.rodape-linha .rodape-col h5{
+font-size: 1.9rem;
+position: relative;
+color: var(--cor-branca);
+letter-spacing: 1px;
+padding: 0.5rem;
+margin: 1rem 0;
+}
+.rodape-linha .rodape-col h5::before{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   width: 100px;
+   height: 3px;
+   border-radius: 3px;
+   background-color: var(--cor-branca);
+}
+.rodape-linha .rodape-col h5::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 40px;
+   width: 20px;
+   height: 3px;
+   border-radius: 3px;
+   background-color: var(--cor-principal);
+
+}
+.rodape-linha .rodape-col a{
+   display: block;
+   font-size: 1.6rem;
+   color: var(--cor-branca);
+   padding-top: 1rem;
+   transition: 0.4 ease;
+}
+.rodape-linha .rodape-col a:hover{
+   color: var(--cor-principal);
+   padding-left: 5px;
+}
+.rodape-linha .rodape-col input{
+   width: 100%;
+   height: 40px;
+   color: var(--cor-escura);
+   padding-left: 10px;
+   margin-bottom: 1.5rem;
+   border-radius: 5px;
+}
+.rodape-linha .rodape-col button{
+   width: 100%;
+   background-color: var(--cor-principal);
+   font-size: 1.6rem;
+   color: var(--cor-branca);
+   padding: 1rem 2rem;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: 0.4s ease;
+}
+.rodape-linha .rodape-col button:hover{
+   background-color: var(--cor-escura);
+   border: 1px solid var(--cor-branca);
+}
+.rodape .rodape-direitos{
+   background-color: var(--cor-terciaria);
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   padding: 2rem 16rem;
+}
+.rodape .rodape-direitos p{
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--cor-branca);
+   letter-spacing: 1px;
+}
+.rodape .rodape-direitos p span{
+   color: var(--cor-principal);
+}
+.rodape .rodape-direitos .rodape-redes{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   padding: 1.3rem 15rem;
+   background-color: var(--cor-principal);
+   clip-path: polygon(10% 0%,100% 0%, 100% 100%, 5% 100%);
+}
+
+.rodape .rodape-direitos .rodape-redes i{
+   font-size: 1.6rem;
+   color: var(--cor-principal);
+   background-color: var(--cor-branca);
+   margin-left: 20px;
+   padding: 1rem;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: 0.4s ease;
+
+
+}
+.rodape .rodape-direitos .rodape-redes i:hover{
+   transform: scale(1.1);
+}
+
+/* Fim rodape ==== cabeçalho site e nav talentos desempregados*/
+
+/* Fim rodape ==== cabeçalho site e nav talentos desempregados*/
+
